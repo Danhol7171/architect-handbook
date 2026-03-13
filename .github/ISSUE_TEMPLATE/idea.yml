@@ -1,0 +1,30 @@
+name: "Идея"
+description: "Предложение по улучшению методики"
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: section
+    attributes:
+      label: Раздел
+      options:
+        - Core Standard
+        - Roles
+        - Process
+        - Artifacts
+        - Practices
+        - Playbooks
+        - Governance
+        - Quality Gates
+        - Tools
+        - Roadmap
+        - Templates
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание идеи
+      description: Что предлагаете и зачем это нужно
+    validations:
+      required: true

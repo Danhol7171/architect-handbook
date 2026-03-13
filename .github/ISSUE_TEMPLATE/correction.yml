@@ -1,0 +1,19 @@
+name: "Исправление"
+description: "Ошибка, неточность или битая ссылка в документации"
+labels: ["fix"]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Файл
+      description: Путь к файлу с ошибкой
+      placeholder: "docs/practices.md"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Что не так
+      description: Опишите ошибку и как должно быть
+    validations:
+      required: true

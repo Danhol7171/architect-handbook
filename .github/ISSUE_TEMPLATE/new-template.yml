@@ -1,0 +1,23 @@
+name: "Новый шаблон"
+description: "Предложение нового шаблона артефакта"
+labels: ["feat", "template"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Название шаблона
+      placeholder: "migration-plan.md"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание
+      description: Для чего нужен шаблон, в каких ситуациях используется
+    validations:
+      required: true
+  - type: textarea
+    id: structure
+    attributes:
+      label: Предлагаемая структура
+      description: Какие секции должен содержать шаблон (опционально)
